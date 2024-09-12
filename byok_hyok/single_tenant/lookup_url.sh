@@ -6,7 +6,7 @@ id="${DOMAIN_ID}"
 apiKey="${ANTIMATTER_API_KEY}"
 # This is the name you want your customer to see you as
 companyName="CompanyName"
-api="https://api.antimatter.io/v1"
+api="https://api.antimatter.io/v2"
 
 if [ -z "$id" ]; then
     echo "Error: missing the $$DOMAIN_ID environment variable"
@@ -27,7 +27,6 @@ token_response=$(curl -sS  -X 'POST' \
   -d '{
   "token": "'"$apiKey"'"
 }')
-echo $token_response
 
 token=$(echo $token_response | jq -r '.token | @uri' )
 
