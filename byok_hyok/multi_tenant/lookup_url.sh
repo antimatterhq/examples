@@ -14,7 +14,7 @@ id="${PARENT_DOMAIN_ID}"
 apiKey="${ANTIMATTER_API_KEY}"
 # This is the name you want your customer to see you as
 companyName="CompanyName"
-api="https://api.antimatter.io/v1"
+api="https://api.antimatter.io/v2"
 
 if [ -z "$id" ]; then
     echo "Error: missing the $$PARENT_DOMAIN_ID environment variable"

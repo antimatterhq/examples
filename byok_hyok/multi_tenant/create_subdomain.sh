@@ -11,7 +11,7 @@ nickname=$1
 
 id="${PARENT_DOMAIN_ID}"
 apiKey="${ANTIMATTER_API_KEY}"
-api="https://api.antimatter.io/v1"
+api="https://api.antimatter.io/v2"
 
 if [ -z "$id" ]; then
     echo "Error: missing the $$PARENT_DOMAIN_ID environment variable"
